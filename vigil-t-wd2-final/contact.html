@@ -65,39 +65,42 @@
 
 		<div class="row">
 			<div class="col-md-6">
-				<form action="/action_page.php">
+				<form action="/action_page.php" method="POST">
 					<div class="mb-3">
-						<label for="name" class="form-label">Your Name</label>
-						<input type="text" class="form-control" id="name" name="name" placeholder="Your name..">
+						<label for="name" class="form-label text-start">Your Name</label>
+						<input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
 					</div>
 					<div class="mb-3">
-						<label for="email" class="form-label">Your Email</label>
-						<input type="text" class="form-control" id="email" name="email"
-							   placeholder="YourEmail@email.com">
+						<label for="email" class="form-label text-start">Your Email</label>
+						<input type="email" class="form-control" id="email" name="email" placeholder="YourEmail@example.com" required>
 					</div>
 					<div class="mb-3">
-						<label for="question-type" class="form-label">Question Type</label>
-						<select class="form-select" id="question-type" name="question-type">
+						<label for="question-type" class="form-label text-start">Question Type</label>
+						<select class="form-select" id="question-type" name="question-type" required>
+							<option value="">Select...</option>
 							<option value="appraisal">Appraisals</option>
 							<option value="buying">Buying</option>
 							<option value="selling">Selling</option>
-							<option value="aquisitions">Aquisitions</option>
+							<option value="acquisitions">Acquisitions</option>
 							<option value="general">General</option>
 						</select>
 					</div>
 					<div class="mb-3">
-						<label for="subject" class="form-label">Subject</label>
-						<textarea class="form-control" id="subject" name="subject"
-								  placeholder="Details about your items and questions here.." style="height:200px"></textarea>
+						<label for="subject" class="form-label text-start">Subject</label>
+						<textarea class="form-control" id="subject" name="subject" placeholder="Details about your items and questions here.." style="height:200px" required></textarea>
 					</div>
 					<div class="mb-3">
-						<input type="submit" class="btn btn-primary" value="Submit">
+						<button type="submit" class="btn btn-primary">Submit</button>
 					</div>
 				</form>
 			</div>
 		</div>
+
 	</div><!-- closes wrapper -->
 </div>
+
+
+<!--FOOTER ------------->
 
 <footer class="container-fluid mt-5">
 	<div class="row">
